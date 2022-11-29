@@ -1,13 +1,12 @@
 import React from "react";
 
 const Categories = ({ categories, filterItems, activeCategory }) => {
-  console.log(categories);
   return (
     <div className="btn-container">
       {categories.map((category, index) => {
         return (
-          <botton
-            key="index"
+          <button
+            key={index}
             className={`${
               activeCategory === category ? "filter-btn active" : "filter-btn"
             }`}
@@ -15,7 +14,7 @@ const Categories = ({ categories, filterItems, activeCategory }) => {
             type="botton"
           >
             {category}
-          </botton>
+          </button>
         );
       })}
     </div>

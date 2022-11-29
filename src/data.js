@@ -4,7 +4,7 @@ const menu = [
     title: "popcorn chicken rice",
     category: "rice dishes",
     price: 14,
-    img: "./images/test.jpeg",
+    img: "./images/Test.jpeg",
     desc: " Choose from mild, medium, hot, or no spice Tender bites of dark meat breaded, fried, and seasoned with pepper salt.",
   },
   {
@@ -12,7 +12,7 @@ const menu = [
     title: "Jalapeño Gravy",
     category: "rice dishes",
     price: 15,
-    img: "./images/test.jpeg",
+    img: "./images/Test.jpeg",
     desc: "- Choice of chicken or beef Homemade jalapeño gravy containing carrot, onion, jalapeño, assorted greens, and meat.",
   },
   {
@@ -20,7 +20,7 @@ const menu = [
     title: "stir-fried udon",
     category: "Dry Noodles",
     price: 15,
-    img: "./images/test.jpeg",
+    img: "./images/Test.jpeg",
     desc: "  Choose from pork or chicken Udon noodles with carrot, onion, and assorted greens.",
   },
   {
@@ -28,7 +28,7 @@ const menu = [
     title: "shrimp fried rice",
     category: "fried rice",
     price: 15,
-    img: "./images/test.jpeg",
+    img: "./images/Test.jpeg",
     desc: "",
   },
   {},

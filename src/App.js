@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Menu from "./Menu";
 import Categories from "./Categories";
 import items from "./data";
-import logo from "./images/Test.jpeg";
+import logo from './Test.jpeg';
 import menu from "./data";
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
@@ -14,7 +14,7 @@ function App() {
 
   const filterItems = (category) => {
     setActiveCategory(category);
-    if (activeCategory === 'all') {
+    if (category === 'all') {
       setMenuItems(menu);
       return;
     }
@@ -35,6 +35,7 @@ function App() {
           filterItems={filterItems}
         />
       </section>
+      <Menu items={menuItems}/>
     </div>
   );
 }
