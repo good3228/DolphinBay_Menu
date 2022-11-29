@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
 
-const Categories = () => {
+const Categories = ({ categories, filterItems, activeCategory }) => {
+  console.log(categories);
   return (
-    <div>
-      
+    <div className="btn-container">
+      {categories.map((category, index) => {
+        return (
+          <botton
+            key="index"
+            className={`${
+              activeCategory === category ? "filter-btn active" : "filter-btn"
+            }`}
+            onClick={() => filterItems(category)}
+            type="botton"
+          >
+            {category}
+          </botton>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default Categories
+export default Categories;
